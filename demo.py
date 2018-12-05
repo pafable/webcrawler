@@ -1,4 +1,6 @@
 from urllib.request import urlopen
+from bs4 import BeautifulSoup
 
 html = urlopen("http://pafable.com")
-print(html.read())
+bsobject = BeautifulSoup(html.read(),"html.parser")
+print(bsobject.h1)
