@@ -52,4 +52,4 @@ class Spider:
         except Exception as e:
             print(str(e))
             return set()
-    return finder.page_links()
+        return finder.page_links()
